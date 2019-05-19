@@ -38,14 +38,7 @@ public class loginActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
 
         LoginButton();
     }
@@ -111,4 +104,28 @@ public class loginActivity extends AppCompatActivity {
                 switchToMain();
             }
         }
+    protected void onStart(Bundle savedInstanceState) {
+        super.onStart();
+        Log.d("started",getClass().getName());
+    }
+
+    protected void onPause(Bundle savedInstanceState) {
+        super.onPause();
+        Log.d("paused", getClass().getName());
+    }
+
+    protected void onDestroy(Bundle savedInstanceState) {
+        super.onDestroy();
+        Log.d("destroyed", getClass().getName());
+    }
+
+    protected void onRestart(Bundle savedInstanceState) {
+        super.onRestart();
+        Log.d("restarted", getClass().getName());
+    }
+
+    protected void onStop(Bundle savedInstanceState) {
+        super.onStop();
+        Log.d("stop", getClass().getName());
+    }
 }

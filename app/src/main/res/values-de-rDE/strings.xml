@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Meine App</string>
     <string name="aktivitaeten">aktivitäten</string>
     <string name="action_settings">Einstellungen</string>
     <string name="nav_header_desc">nav_header_desc</string>

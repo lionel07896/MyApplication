@@ -8,10 +8,7 @@
             android:id="@+id/nav_timer"
             android:icon="@drawable/ic_alarm"
             android:title="@string/timer" />
-        <item
-            android:id="@+id/nav_list"
-            android:icon="@drawable/ic_list"
-            android:title="@string/aktivit_ten_liste" />
+
         <item
             android:id="@+id/nav_add"
             android:icon="@drawable/ic_add"

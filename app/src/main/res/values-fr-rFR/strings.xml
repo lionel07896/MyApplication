@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Mon application</string>
     <string name="aktivitaeten">activités</string>
     <string name="action_settings">paramétrage</string>
     <string name="name">Nom</string>

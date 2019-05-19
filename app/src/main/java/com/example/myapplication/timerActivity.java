@@ -13,12 +13,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.util.Log;
+
 
 import java.text.DateFormat;
 import java.util.Calendar;
 
+
+
 public class timerActivity extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
     private TextView mTextView;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,6 +90,30 @@ public class timerActivity extends AppCompatActivity implements TimePickerDialog
 
         alarmManager.cancel(pendingIntent);
         mTextView.setText("Alarm canceled");
+    }
+    protected void onStart(Bundle savedInstanceState) {
+        super.onStart();
+        Log.d("started",getClass().getName());
+    }
+
+    protected void onPause(Bundle savedInstanceState) {
+        super.onPause();
+        Log.d("paused", getClass().getName());
+    }
+
+    protected void onDestroy(Bundle savedInstanceState) {
+        super.onDestroy();
+        Log.d("destroyed", getClass().getName());
+    }
+
+    protected void onRestart(Bundle savedInstanceState) {
+        super.onRestart();
+        Log.d("restarted", getClass().getName());
+    }
+
+    protected void onStop(Bundle savedInstanceState) {
+        super.onStop();
+        Log.d("stop", getClass().getName());
     }
 
 }
