@@ -32,10 +32,10 @@
         android:id="@+id/txt_zeit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
         android:text="TextView"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/txt_name"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

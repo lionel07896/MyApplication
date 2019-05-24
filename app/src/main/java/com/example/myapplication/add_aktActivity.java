@@ -53,16 +53,7 @@ public class add_aktActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
 
-
-            }
-        });
 
         dataSource = new AktivitaetDataSource(this);
         Log.d(LOG_TAG, "Die Datenquelle wird geöffnet.");
@@ -70,8 +61,6 @@ public class add_aktActivity extends AppCompatActivity {
 
 
         addbutton();
-
-
 
     }
     @Override
